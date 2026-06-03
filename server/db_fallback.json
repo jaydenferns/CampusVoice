@@ -1,0 +1,184 @@
+{
+  "students": [
+    {
+      "id": "STU-1001",
+      "name": "Jayden Smith",
+      "rollNumber": "CS2023045",
+      "email": "student@campusvoice.edu",
+      "password": "$2a$10$FiiCl6U4NZ7p.9lCjVn9nu3ENBO.mrVSXuBJcPNiUfdWlZR5vbjkS",
+      "department": "Academic"
+    },
+    {
+      "id": "STU-1002",
+      "name": "Emma Watson",
+      "rollNumber": "EC2023012",
+      "email": "emma@campusvoice.edu",
+      "password": "$2a$10$KIb1bJlLW.fIDxMyPcXrbOBheI.KEVLxJ7nn6OHaFwSxXfrRQp1.2",
+      "department": "Hostel"
+    },
+    {
+      "id": "STU-1003",
+      "name": "Jayden",
+      "rollNumber": "Jaydenfernandes2020@gmail.com",
+      "email": "Jaydenfernandes2020@gmail.com",
+      "password": "$2a$10$1N7S/G40TpCxEMEYc2vEtewNyKBjQJtEkQM2/6cM.LizCST04cnNG",
+      "department": "Academic"
+    }
+  ],
+  "admins": [
+    {
+      "id": "ADM-2001",
+      "name": "Prof. Richard Feynman",
+      "role": "Super Admin",
+      "email": "admin@campusvoice.edu",
+      "password": "$2a$10$XWbjikG6IMUydf4itr5r/uEhc5BUtv/HhmgwJDQByQv/oSSrd7JrC"
+    },
+    {
+      "id": "ADM-2002",
+      "name": "Dr. Jane Goodall",
+      "role": "Hostel Warden",
+      "email": "warden@campusvoice.edu",
+      "password": "$2a$10$wiTksAejGTiy.LNFGgW1R.YKUirOlLzgssJ8y3vRwZnimpqD9gB5C"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "CMP-2026-001",
+      "title": "Water Cooler Leaking in Hostel Block A",
+      "description": "The water cooler on the 2nd floor of Hostel A has been leaking since yesterday. There is a lot of water on the floor which is a slip hazard.",
+      "department": "Maintenance",
+      "category": "Plumbing",
+      "priority": "High",
+      "status": "In Progress",
+      "studentId": "STU-1001",
+      "anonymous": false,
+      "attachments": "",
+      "assignedStaff": "Ramesh (Plumber)",
+      "createdAt": "2026-05-31T06:43:11.699Z",
+      "updatedAt": "2026-06-02T06:43:11.699Z"
+    },
+    {
+      "id": "CMP-2026-002",
+      "title": "WiFi Router Offline in Library 3rd Floor",
+      "description": "The WiFi signal is extremely weak or disconnected on the entire 3rd floor of the central library. Students are unable to access research materials.",
+      "department": "IT Support",
+      "category": "Network",
+      "priority": "Medium",
+      "status": "Assigned",
+      "studentId": "STU-1002",
+      "anonymous": false,
+      "attachments": "",
+      "assignedStaff": "Suresh (Network Eng.)",
+      "createdAt": "2026-06-02T06:43:11.699Z",
+      "updatedAt": "2026-06-02T06:43:11.699Z"
+    },
+    {
+      "id": "CMP-2026-003",
+      "title": "Library Air Conditioner is making clicking noise",
+      "description": "The AC unit in the study section is making a loud clicking sound that makes it impossible to concentrate. Please repair it.",
+      "department": "Maintenance",
+      "category": "Electrical",
+      "priority": "Low",
+      "status": "Submitted",
+      "studentId": "STU-1001",
+      "anonymous": true,
+      "attachments": "",
+      "assignedStaff": "",
+      "createdAt": "2026-06-03T00:43:11.699Z",
+      "updatedAt": "2026-06-03T00:43:11.699Z"
+    },
+    {
+      "id": "CMP-2026-004",
+      "title": "Broken desk in Room 102 Academic Block",
+      "description": "One of the front row desks has a broken leg and is unstable. Needs to be replaced or fixed.",
+      "department": "Academic",
+      "category": "Furniture",
+      "priority": "Low",
+      "status": "Closed",
+      "studentId": "STU-1001",
+      "anonymous": false,
+      "attachments": "",
+      "assignedStaff": "Mr. Verma (Carpentry)",
+      "createdAt": "2026-05-29T06:43:11.699Z",
+      "updatedAt": "2026-06-03T06:48:14.645Z",
+      "rating": {
+        "speed": 5,
+        "behavior": 5,
+        "satisfaction": 5,
+        "feedback": ""
+      }
+    },
+    {
+      "id": "CMP-2026-005",
+      "title": "There is leakage in L21",
+      "description": "There is leakage in L21",
+      "department": "Maintenance",
+      "category": "Plumbing",
+      "priority": "High",
+      "status": "Submitted",
+      "studentId": "STU-1003",
+      "anonymous": true,
+      "attachments": "",
+      "assignedStaff": "",
+      "createdAt": "2026-06-03T06:45:39.339Z",
+      "updatedAt": "2026-06-03T06:46:57.373Z"
+    },
+    {
+      "id": "CMP-2026-006",
+      "title": "feeling hot in class L21",
+      "description": "feeling hot in class L21",
+      "department": "Academic",
+      "category": "General",
+      "priority": "Low",
+      "status": "Submitted",
+      "studentId": "STU-1001",
+      "anonymous": false,
+      "attachments": "",
+      "assignedStaff": "",
+      "createdAt": "2026-06-03T06:48:50.832Z",
+      "updatedAt": "2026-06-03T06:48:50.832Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "STU-1001",
+      "message": "Your complaint CMP-2026-001 has been moved to In Progress.",
+      "type": "status_update",
+      "read": true,
+      "createdAt": "2026-06-02T06:43:11.699Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "STU-1001",
+      "message": "Your complaint CMP-2026-004 has been Resolved! Please provide feedback.",
+      "type": "resolved",
+      "read": true,
+      "createdAt": "2026-06-01T06:43:11.699Z"
+    },
+    {
+      "id": "notif-av7if13py",
+      "userId": "STU-1003",
+      "message": "Your complaint CMP-2026-005 has been submitted successfully.",
+      "type": "submitted",
+      "read": false,
+      "createdAt": "2026-06-03T06:45:39.340Z"
+    },
+    {
+      "id": "notif-qnijr9b0g",
+      "userId": "STU-1003",
+      "message": "Your complaint CMP-2026-005 has been updated.",
+      "type": "status_update",
+      "read": false,
+      "createdAt": "2026-06-03T06:46:57.375Z"
+    },
+    {
+      "id": "notif-t9am98ptu",
+      "userId": "STU-1001",
+      "message": "Your complaint CMP-2026-006 has been submitted successfully.",
+      "type": "submitted",
+      "read": true,
+      "createdAt": "2026-06-03T06:48:50.833Z"
+    }
+  ]
+}
